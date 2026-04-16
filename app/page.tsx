@@ -1,4 +1,4 @@
-const navLinks = [
+8const navLinks = [
   { href: "#services", label: "Services" },
   { href: "#portfolio", label: "Portfolio" },
   { href: "#about", label: "About" },
@@ -422,24 +422,8 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-wrap gap-6 text-sm font-medium text-slate-400">
-            <a href="#services" className="hover:text-cyan-300">
-              Services
-            </a>
-            <a href="#portfolio" className="hover:text-cyan-300">
-              Portfolio
-            </a>
-            <a href="#about" className="hover:text-cyan-300">
-              About
-            </a>
-            <a href="#cta" className="hover:text-cyan-300">
-              Book a Call
-            </a>
-          </div>
-          <p className="text-xs text-slate-500 lg:text-right">
-            © {new Date().getFullYear()} AI Forge Advantage. Fort Worth, Texas.
-          </p>
-        </div>
-      </footer>
-    </div>
-  );
-}
+            <a href="#services"<p className=
+    <p className="text-xs text-slate-500 lg:text-right">
+  Call or text: (325) 389-1081<br />
+  ai.advantage.freelance.consulting@gmail.com
+</p>
