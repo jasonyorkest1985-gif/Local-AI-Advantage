@@ -142,20 +142,15 @@ export default function Home() {
           </p>
           <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
             <a
-              href="#cta"
-              className="inline-flex items-center justify-center rounded-full bg-cyan-400 px-8 py-3.5 text-base font-semibold text-[#050a14] shadow-[0_0_40px_-8px_rgba(34,211,238,0.85)] transition hover:bg-cyan-300"
-            >
-              Book a discovery call
-            </a>
-            <a
-              href="#services"
-              className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-8 py-3.5 text-base font-semibold text-white transition hover:border-cyan-400/40 hover:bg-white/10"
-            >
-              Explore services
-            </a>
-          </div>
-          <dl className="mt-14 grid gap-6 border-t border-white/10 pt-10 sm:grid-cols-3">
-            <div>
+              <div className="flex flex-wrap gap-4">
+  <a href="tel:3253891081" className="inline-flex items-center justify-center rounded-full bg-cyan-400 px-8 py-3.5 text-base font-semibold text-black">
+    Call Now (325) 389-1081
+  </a>
+  
+  <a href="mailto:ai.advantage.freelance.consulting@gmail.com?subject=Discovery Call Request" className="inline-flex items-center justify-center rounded-full border border-white/30 px-8 py-3.5 text-base font-semibold text-white">
+    Email for a Call
+  </a>
+</div>
               <dt className="text-sm font-medium text-slate-400">
                 Built for operators
               </dt>
