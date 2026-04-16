@@ -390,13 +390,12 @@ export default function Home() {
                     Review services first
                   </a>
                 </div>
-                <p className="mt-6 text-sm text-slate-400">
-                  Prefer a quick note? Email{" "}
-                  <a
-                    href="mailto:hello@aiforgeadvantage.com"
-                    className="font-medium text-cyan-300 underline-offset-4 hover:underline"
-                  >
-                    hello@aiforgeadvantage.com
+<p className="mt-6 text-sm text-slate-400">
+  Prefer a quick note? 
+  <a href="mailto:ai.advantage.freelance.consulting@gmail.com?subject=Book a call — Fort Worth AI automation" className="font-medium text-cyan-300 underline-offset-4 hover:underline">
+    Email me
+  </a>
+</p>
                   </a>
                   .
                 </p>
