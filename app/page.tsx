@@ -1,55 +1,87 @@
-8const navLinks = [
+const navLinks = [
   { href: "#services", label: "Services" },
-  { href: "#portfolio", label: "Portfolio" },
+  { href: "#process", label: "How It Works" },
+  { href: "#portfolio", label: "Examples" },
   { href: "#about", label: "About" },
 ];
 
 const services = [
   {
-    title: "Restaurant Review Automation",
+    title: "Review Reply Automation",
     description:
-      "Draft thoughtful replies, route issues to managers, and keep your reputation polished—without living in review apps.",
+      "Reply faster to Google and Facebook reviews with drafts that sound professional, stay on-brand, and flag unhappy customers before problems grow.",
   },
   {
-    title: "Contractor Social Media Machine",
+    title: "Lead Follow-Up Systems",
     description:
-      "Turn job photos into scheduled posts, captions, and local SEO-friendly blurbs that showcase real Fort Worth work.",
+      "Turn missed calls, form leads, and inquiry messages into organized follow-up so potential customers do not slip through the cracks.",
   },
   {
-    title: "Real Estate AI",
+    title: "Contractor Content Engine",
     description:
-      "Listing summaries, buyer FAQs, and follow-up drafts tuned to your voice so you stay fast without sounding generic.",
+      "Turn job photos into social posts, captions, and simple local marketing content without needing to sit down and write everything yourself.",
   },
   {
-    title: "Retail Chatbots",
+    title: "FAQ and Customer Messaging",
     description:
-      "After-hours answers for hours, returns, and promotions—grounded in your policies so customers feel helped, not bounced.",
+      "Answer common questions about pricing, hours, services, availability, and policies without making customers wait on a reply.",
   },
   {
-    title: "Custom Business Brain",
+    title: "Custom AI Assistant for Your Business",
     description:
-      "One assistant trained on your docs, pricing, and process. Built for owners who want leverage, not another SaaS tab.",
+      "A practical assistant trained on your business info, documents, pricing, and workflow so your team gets useful help, not generic AI output.",
+  },
+  {
+    title: "Small Workflow Automation",
+    description:
+      "We identify repetitive admin work and build small automations that save time every week instead of adding more software chaos.",
   },
 ];
 
-const portfolioItems = [
+const examples = [
   {
-    label: "Local restaurant group",
-    before: "2+ hours nightly on Google/Yelp replies; inconsistent tone.",
+    label: "Restaurant or café",
+    before:
+      "Owners or managers spend time replying to reviews late at night and trying to keep the tone professional.",
     after:
-      "90-second review queue with suggested replies and escalation tags—on-brand every time.",
+      "A faster review workflow with suggested replies, issue flagging, and less time wasted inside review apps.",
   },
   {
-    label: "Home services crew",
-    before: "Social posts slipped for weeks; marketing lived in someone’s head.",
+    label: "Home service business",
+    before:
+      "Photos pile up, posts never get made, and potential customers do not see recent work often enough.",
     after:
-      "Photo → post pipeline with a Fort Worth–local voice and a simple weekly calendar.",
+      "A simple content pipeline that turns real job photos into usable posts and marketing material.",
   },
   {
-    label: "Boutique retail",
-    before: "Staff answering the same DMs after close; lost sales overnight.",
+    label: "Retail or appointment-based shop",
+    before:
+      "Customers send the same questions after hours and staff has to repeat the same answers every day.",
     after:
-      "Trained chat flow for sizing, pickup, and promos with human handoff when it matters.",
+      "A cleaner customer-answer system for common questions, promos, pickup details, and handoff when a human is needed.",
+  },
+];
+
+const processSteps = [
+  {
+    title: "1. Short discovery call",
+    description:
+      "We figure out where time is being wasted, what is repetitive, and what is actually worth automating.",
+  },
+  {
+    title: "2. Pick one high-value problem",
+    description:
+      "We start with one practical win instead of trying to automate your whole business at once.",
+  },
+  {
+    title: "3. Build and test",
+    description:
+      "We build a working system around your real business information and adjust it until it is useful.",
+  },
+  {
+    title: "4. Handoff and improve",
+    description:
+      "You get something your team can actually use, plus cleanup and refinement after launch.",
   },
 ];
 
@@ -69,10 +101,10 @@ export default function Home() {
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
           <a
             href="#top"
-            className="group flex items-center gap-2 text-lg font-semibold tracking-tight text-white"
+            className="group flex items-center gap-3 text-lg font-semibold tracking-tight text-white"
           >
             <span
-              className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-cyan-400 to-cyan-600 text-[#050a14] shadow-[0_0_24px_-4px_rgba(34,211,238,0.65)] transition group-hover:shadow-[0_0_32px_-2px_rgba(34,211,238,0.85)]"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-400 to-cyan-600 text-[#050a14] shadow-[0_0_24px_-4px_rgba(34,211,238,0.65)] transition group-hover:shadow-[0_0_32px_-2px_rgba(34,211,238,0.85)]"
               aria-hidden
             >
               <svg
@@ -116,90 +148,95 @@ export default function Home() {
           </nav>
 
           <a
-        <a 
-  href="tel:3253891081" 
-  className="inline-flex shrink-0 items-center justify-center rounded-full bg-cyan-400 px-8 py-3.5 text-sm font-semibold text- shadow-[0_0_24px_-6px_rgb(34,211,238,0.9)] transition hover:bg-cyan-300 hover:shadow-[0_0_36px_-4px_rgb(34,211,238,1)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
->
-  Call Now (325) 389-1081
-</a>
+            href="tel:3253891081"
+            className="inline-flex shrink-0 items-center justify-center rounded-full bg-cyan-400 px-5 py-3 text-sm font-semibold text-black shadow-[0_0_24px_-6px_rgb(34,211,238,0.9)] transition hover:bg-cyan-300 hover:shadow-[0_0_36px_-4px_rgb(34,211,238,1)]"
+          >
+            Call Now
+          </a>
+        </div>
+      </header>
+
       <main id="top">
-        <section
-          className="relative mx-auto max-w-6xl px-4 pb-20 pt-16 sm:px-6 sm:pb-24 sm:pt-20 lg:px-8 lg:pb-28 lg:pt-24"
-          aria-labelledby="hero-heading"
-        >
+        <section className="relative mx-auto max-w-6xl px-4 pb-20 pt-16 sm:px-6 sm:pb-24 sm:pt-20 lg:px-8 lg:pb-28 lg:pt-24">
           <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-cyan-400/25 bg-cyan-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-cyan-200">
             Fort Worth–focused AI automation
           </p>
-          <h1
-            id="hero-heading"
-            className="max-w-4xl text-balance text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl lg:leading-[1.08]"
-          >
-            Forging AI Advantages for Fort Worth Businesses
+
+          <h1 className="max-w-4xl text-balance text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl lg:leading-[1.08]">
+            Practical AI systems for Fort Worth small businesses
           </h1>
+
           <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-slate-300 sm:text-xl">
-            Save 10–20 hours per week with custom AI tools built for local
-            businesses
+            We help local businesses save time, follow up faster, and handle
+            repetitive work with simple AI tools built around real workflows.
           </p>
-          <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
+
+          <div className="mt-10 flex flex-wrap gap-4">
             <a
-              <div className="flex flex-wrap gap-4">
-  <a href="tel:3253891081" className="inline-flex items-center justify-center rounded-full bg-cyan-400 px-8 py-3.5 text-base font-semibold text-black">
-    Call Now (325) 389-1081
-  </a>
-  
-  <a href="mailto:ai.advantage.freelance.consulting@gmail.com?subject=Discovery Call Request" className="inline-flex items-center justify-center rounded-full border border-white/30 px-8 py-3.5 text-base font-semibold text-white">
-    Email for a Call
-  </a>
-</div>
-              <dt className="text-sm font-medium text-slate-400">
-                Built for operators
-              </dt>
-              <dd className="mt-1 text-2xl font-semibold tracking-tight text-white">
-                Hands-on delivery
-              </dd>
+              href="tel:3253891081"
+              className="inline-flex items-center justify-center rounded-full bg-cyan-400 px-8 py-3.5 text-base font-semibold text-black shadow-[0_0_28px_-8px_rgba(34,211,238,0.9)] transition hover:bg-cyan-300"
+            >
+              Call Now (325) 389-1081
+            </a>
+
+            <a
+              href="mailto:ai.advantage.freelance.consulting@gmail.com?subject=Free%20AI%20Discovery%20Call"
+              className="inline-flex items-center justify-center rounded-full border border-white/25 bg-white/5 px-8 py-3.5 text-base font-semibold text-white transition hover:border-cyan-400/40 hover:bg-white/10"
+            >
+              Email for a Free Call
+            </a>
+          </div>
+
+          <div className="mt-12 grid gap-8 sm:grid-cols-3">
+            <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+              <p className="text-sm font-medium text-slate-400">
+                Built for real operations
+              </p>
+              <p className="mt-2 text-2xl font-semibold tracking-tight text-white">
+                Practical over flashy
+              </p>
             </div>
-            <div>
-              <dt className="text-sm font-medium text-slate-400">
-                Grounded in your business
-              </dt>
-              <dd className="mt-1 text-2xl font-semibold tracking-tight text-white">
-                Custom workflows
-              </dd>
+
+            <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+              <p className="text-sm font-medium text-slate-400">
+                Start with one win
+              </p>
+              <p className="mt-2 text-2xl font-semibold tracking-tight text-white">
+                Small systems that pay off
+              </p>
             </div>
-            <div>
-              <dt className="text-sm font-medium text-slate-400">
-                Local context
-              </dt>
-              <dd className="mt-1 text-2xl font-semibold tracking-tight text-white">
-                Fort Worth–aware
-              </dd>
+
+            <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+              <p className="text-sm font-medium text-slate-400">
+                Local-first approach
+              </p>
+              <p className="mt-2 text-2xl font-semibold tracking-tight text-white">
+                Fort Worth aware
+              </p>
             </div>
-          </dl>
+          </div>
         </section>
 
         <section
           id="services"
           className="border-t border-white/5 bg-[#060f1f]/80 py-20 sm:py-24"
-          aria-labelledby="services-heading"
         >
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <div className="max-w-2xl">
-              <h2
-                id="services-heading"
-                className="text-3xl font-bold tracking-tight text-white sm:text-4xl"
-              >
-                Services designed for real-world small business
+              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                What we can build for you
               </h2>
               <p className="mt-4 text-lg text-slate-300">
-                Practical automations that plug into how you already work—no
-                cookie-cutter chatbots unless you want one.
+                Clear, useful automations for businesses that want less wasted
+                time and better follow-through.
               </p>
             </div>
+
             <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {services.map((item) => (
                 <li
                   key={item.title}
-                  className="group flex flex-col rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.06] to-white/[0.02] p-6 shadow-[0_0_0_1px_rgba(255,255,255,0.02)] transition hover:border-cyan-400/35 hover:shadow-[0_20px_60px_-30px_rgba(34,211,238,0.35)]"
+                  className="group flex flex-col rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.06] to-white/[0.02] p-6 transition hover:border-cyan-400/35 hover:shadow-[0_20px_60px_-30px_rgba(34,211,238,0.35)]"
                 >
                   <span
                     className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-400/10 text-cyan-300 ring-1 ring-cyan-400/25"
@@ -227,14 +264,17 @@ export default function Home() {
                       />
                     </svg>
                   </span>
+
                   <h3 className="text-lg font-semibold text-white">
                     {item.title}
                   </h3>
+
                   <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-400">
                     {item.description}
                   </p>
+
                   <span className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-cyan-300 opacity-0 transition group-hover:opacity-100">
-                    Learn on your call
+                    Ask about this
                     <span aria-hidden>→</span>
                   </span>
                 </li>
@@ -243,28 +283,52 @@ export default function Home() {
           </div>
         </section>
 
+        <section id="process" className="py-20 sm:py-24">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <div className="max-w-2xl">
+              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                How it works
+              </h2>
+              <p className="mt-4 text-lg text-slate-300">
+                We keep this simple. No giant tech overhaul. No buzzword maze.
+              </p>
+            </div>
+
+            <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+              {processSteps.map((step) => (
+                <div
+                  key={step.title}
+                  className="rounded-2xl border border-white/10 bg-[#071225] p-6"
+                >
+                  <h3 className="text-lg font-semibold text-white">
+                    {step.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-slate-400">
+                    {step.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section
           id="portfolio"
-          className="py-20 sm:py-24"
-          aria-labelledby="portfolio-heading"
+          className="border-t border-white/5 bg-[#060f1f]/80 py-20 sm:py-24"
         >
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-              <div className="max-w-2xl">
-                <h2
-                  id="portfolio-heading"
-                  className="text-3xl font-bold tracking-tight text-white sm:text-4xl"
-                >
-                  Outcomes you can recognize
-                </h2>
-                <p className="mt-4 text-lg text-slate-300">
-                  Mock before/after snapshots—representative of the clarity and
-                  time savings we build toward.
-                </p>
-              </div>
+            <div className="max-w-2xl">
+              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                Example outcomes
+              </h2>
+              <p className="mt-4 text-lg text-slate-300">
+                These are sample scenarios based on common local business
+                problems we can help solve.
+              </p>
             </div>
+
             <div className="mt-12 grid gap-6 lg:grid-cols-3">
-              {portfolioItems.map((item) => (
+              {examples.map((item) => (
                 <article
                   key={item.label}
                   className="flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#071225]"
@@ -274,6 +338,7 @@ export default function Home() {
                       {item.label}
                     </h3>
                   </div>
+
                   <div className="grid flex-1 gap-0 sm:grid-cols-2 lg:grid-cols-1">
                     <div className="border-white/10 p-5 sm:border-r lg:border-r-0 lg:border-b">
                       <p className="text-xs font-bold uppercase tracking-wider text-rose-300/90">
@@ -283,6 +348,7 @@ export default function Home() {
                         {item.before}
                       </p>
                     </div>
+
                     <div className="bg-gradient-to-br from-cyan-500/10 to-transparent p-5">
                       <p className="text-xs font-bold uppercase tracking-wider text-cyan-300">
                         After
@@ -298,53 +364,46 @@ export default function Home() {
           </div>
         </section>
 
-        <section
-          id="about"
-          className="border-t border-white/5 bg-[#060f1f]/80 py-20 sm:py-24"
-          aria-labelledby="about-heading"
-        >
+        <section id="about" className="py-20 sm:py-24">
           <div className="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:items-center lg:px-8">
             <div>
-              <h2
-                id="about-heading"
-                className="text-3xl font-bold tracking-tight text-white sm:text-4xl"
-              >
-                Rooted in Fort Worth
+              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                Built for local businesses that do not have time to waste
               </h2>
               <p className="mt-4 text-lg leading-relaxed text-slate-300">
-                AI Forge Advantage works with small businesses across Fort Worth
-                and nearby neighborhoods—restaurants on Camp Bowie, contractors
-                serving Tarrant County, retailers near Sundance Square, and
-                independent pros who do not have time to babysit software.
+                AI Forge Advantage helps Fort Worth businesses use AI in ways
+                that are practical, understandable, and actually useful day to
+                day.
               </p>
               <p className="mt-4 text-lg leading-relaxed text-slate-300">
-                We prioritize trust: clear scope, sensible guardrails around
-                customer data, and systems your team can actually run day to day.
+                We are not trying to bury you in tech jargon or sell you some
+                giant complicated system. We focus on the repetitive work that
+                costs you time every week and build around that.
               </p>
             </div>
+
             <div className="rounded-2xl border border-cyan-400/20 bg-gradient-to-br from-cyan-500/10 via-[#050a14] to-[#050a14] p-8 shadow-[0_0_60px_-20px_rgba(34,211,238,0.45)]">
               <blockquote className="text-lg font-medium leading-relaxed text-white">
-                “We are not here to sell buzzwords. We ship small, reliable
-                automations that earn their place in your week.”
+                “We are not here to sell buzzwords. We build small, reliable AI
+                systems that earn their place in your business.”
               </blockquote>
-              <p className="mt-6 text-sm font-semibold text-cyan-200">
-                — AI Forge Advantage
-              </p>
+
               <ul className="mt-8 space-y-3 text-sm text-slate-300">
                 <li className="flex gap-2">
                   <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-400" />
-                  Local-first discovery: we learn your real workflow, not a
-                  generic intake form.
+                  Clear scope and plain-English recommendations
                 </li>
                 <li className="flex gap-2">
                   <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-400" />
-                  Documentation and handoff so you are never locked into mystery
-                  prompts.
+                  Systems built around your business, not generic templates
                 </li>
                 <li className="flex gap-2">
                   <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-400" />
-                  Iteration after launch—because the first version is never the
-                  last.
+                  Simple handoff so you are not stuck with mystery tech
+                </li>
+                <li className="flex gap-2">
+                  <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-400" />
+                  Follow-up refinement after launch
                 </li>
               </ul>
             </div>
@@ -353,8 +412,7 @@ export default function Home() {
 
         <section
           id="cta"
-          className="py-20 sm:py-24"
-          aria-labelledby="cta-heading"
+          className="border-t border-white/5 py-20 sm:py-24"
         >
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <div className="relative overflow-hidden rounded-3xl border border-cyan-400/25 bg-gradient-to-br from-[#0a1f33] via-[#061018] to-[#050a14] px-6 py-14 text-center shadow-[0_0_80px_-24px_rgba(34,211,238,0.55)] sm:px-12 sm:py-16">
@@ -365,39 +423,42 @@ export default function Home() {
                 <div className="absolute -left-20 top-0 h-64 w-64 rounded-full bg-cyan-400/30 blur-[80px]" />
                 <div className="absolute -right-10 bottom-0 h-56 w-56 rounded-full bg-blue-500/25 blur-[70px]" />
               </div>
+
               <div className="relative">
-                <h2
-                  id="cta-heading"
-                  className="mx-auto max-w-3xl text-balance text-3xl font-bold tracking-tight text-white sm:text-4xl"
-                >
-                  Ready to reclaim your week?
+                <h2 className="mx-auto max-w-3xl text-balance text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                  Ready to see what AI could actually do for your business?
                 </h2>
+
                 <p className="mx-auto mt-4 max-w-2xl text-pretty text-lg text-slate-300">
-                  Book a short call. We will map your highest-friction tasks and
-                  tell you honestly what AI can—and should—take off your plate.
+                  Call or email for a short discovery conversation. We will look
+                  at where your time is being wasted and tell you honestly what
+                  is worth automating first.
                 </p>
+
                 <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
                   <a
-                    href="mailto:hello@aiforgeadvantage.com?subject=Book%20a%20call%20%E2%80%94%20Fort%20Worth%20AI%20automation"
+                    href="tel:3253891081"
                     className="inline-flex w-full items-center justify-center rounded-full bg-cyan-400 px-10 py-4 text-base font-semibold text-[#050a14] shadow-[0_0_48px_-8px_rgba(34,211,238,0.9)] transition hover:bg-cyan-300 sm:w-auto"
                   >
-                    Book a Call
+                    Call Now
                   </a>
+
                   <a
-                    href="#services"
+                    href="mailto:ai.advantage.freelance.consulting@gmail.com?subject=Free%20AI%20Discovery%20Call"
                     className="inline-flex w-full items-center justify-center rounded-full border border-white/20 bg-white/5 px-10 py-4 text-base font-semibold text-white transition hover:border-cyan-400/40 hover:bg-white/10 sm:w-auto"
                   >
-                    Review services first
+                    Email Me
                   </a>
                 </div>
-<p className="mt-6 text-sm text-slate-400">
-  Prefer a quick note? 
-  <a href="mailto:ai.advantage.freelance.consulting@gmail.com?subject=Book a call — Fort Worth AI automation" className="font-medium text-cyan-300 underline-offset-4 hover:underline">
-    Email me
-  </a>
-</p>
+
+                <p className="mt-6 text-sm text-slate-400">
+                  Prefer email?{" "}
+                  <a
+                    href="mailto:ai.advantage.freelance.consulting@gmail.com?subject=Free%20AI%20Discovery%20Call"
+                    className="font-medium text-cyan-300 underline-offset-4 hover:underline"
+                  >
+                    ai.advantage.freelance.consulting@gmail.com
                   </a>
-                  .
                 </p>
               </div>
             </div>
@@ -410,12 +471,32 @@ export default function Home() {
           <div>
             <p className="text-lg font-semibold text-white">AI Forge Advantage</p>
             <p className="mt-2 max-w-md text-sm leading-relaxed text-slate-400">
-              AI automation and custom tools for Fort Worth small businesses.
+              Practical AI systems for Fort Worth small businesses.
             </p>
           </div>
+
           <div className="flex flex-wrap gap-6 text-sm font-medium text-slate-400">
-            <a href="#services"<p className=
-    <p className="text-xs text-slate-500 lg:text-right">
-  Call or text: (325) 389-1081<br />
-  ai.advantage.freelance.consulting@gmail.com
-</p>
+            <a href="#services" className="hover:text-cyan-300">
+              Services
+            </a>
+            <a href="#process" className="hover:text-cyan-300">
+              How It Works
+            </a>
+            <a href="#portfolio" className="hover:text-cyan-300">
+              Examples
+            </a>
+            <a href="#about" className="hover:text-cyan-300">
+              About
+            </a>
+          </div>
+
+          <p className="text-xs text-slate-500 lg:text-right">
+            Call or text: (325) 389-1081
+            <br />
+            ai.advantage.freelance.consulting@gmail.com
+          </p>
+        </div>
+      </footer>
+    </div>
+  );
+}
