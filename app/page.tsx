@@ -1,3 +1,5 @@
+import { ChatBox } from "./components/ChatBox";
+
 const navLinks = [
   { href: "#services", label: "Services" },
   { href: "#process", label: "How It Works" },
@@ -465,6 +467,8 @@ export default function Home() {
           </div>
         </section>
       </main>
+
+      <ChatBox />
 
       <footer className="border-t border-white/10 bg-[#040814] py-12">
         <div className="mx-auto flex max-w-6xl flex-col gap-10 px-4 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
