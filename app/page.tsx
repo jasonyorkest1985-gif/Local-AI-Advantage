@@ -1,3 +1,5 @@
+import { ChatBox } from "../components/ChatBox";
+
 const navLinks = [
   { href: "#services", label: "Services" },
   { href: "#process", label: "How It Works" },
@@ -497,6 +499,7 @@ export default function Home() {
           </p>
         </div>
       </footer>
+      <ChatBox />
     </div>
   );
 }
