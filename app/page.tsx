@@ -148,7 +148,7 @@ export default function Home() {
           </nav>
 
           <a
-            href="tel:3253891081"
+            href="tel:+13253891081"
             className="inline-flex shrink-0 items-center justify-center rounded-full bg-cyan-400 px-5 py-3 text-sm font-semibold text-black shadow-[0_0_24px_-6px_rgb(34,211,238,0.9)] transition hover:bg-cyan-300 hover:shadow-[0_0_36px_-4px_rgb(34,211,238,1)]"
           >
             Call Now
@@ -173,7 +173,7 @@ export default function Home() {
 
           <div className="mt-10 flex flex-wrap gap-4">
             <a
-              href="tel:3253891081"
+              href="tel:+13253891081"
               className="inline-flex items-center justify-center rounded-full bg-cyan-400 px-8 py-3.5 text-base font-semibold text-black shadow-[0_0_28px_-8px_rgba(34,211,238,0.9)] transition hover:bg-cyan-300"
             >
               Call Now (325) 389-1081
@@ -437,7 +437,7 @@ export default function Home() {
 
                 <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
                   <a
-                    href="tel:3253891081"
+                    href="tel:+13253891081"
                     className="inline-flex w-full items-center justify-center rounded-full bg-cyan-400 px-10 py-4 text-base font-semibold text-[#050a14] shadow-[0_0_48px_-8px_rgba(34,211,238,0.9)] transition hover:bg-cyan-300 sm:w-auto"
                   >
                     Call Now
