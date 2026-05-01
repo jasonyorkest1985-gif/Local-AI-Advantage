@@ -1,8 +1,26 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Runtime Requirements
+
+- Node.js `>= 20.9.0` (required by Next.js 16)
+- npm `>= 10` recommended
+
+If you use `nvm`, run:
+
+```bash
+nvm install
+nvm use
+```
+
 ## Getting Started
 
-First, run the development server:
+First, install dependencies:
+
+```bash
+npm install
+```
+
+Then run the development server:
 
 ```bash
 npm run dev
