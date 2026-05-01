@@ -149,7 +149,7 @@ export default function Home() {
 
           <a
             href="tel:3253891081"
-            className="inline-flex shrink-0 items-center justify-center rounded-full bg-cyan-400 px-5 py-3 text-sm font-semibold text-black shadow-[0_0_24px_-6px_rgb(34,211,238,0.9)] transition hover:bg-cyan-300 hover:shadow-[0_0_36px_-4px_rgb(34,211,238,1)]"
+            className="inline-flex shrink-0 items-center justify-center rounded-full bg-cyan-400 px-5 py-3 text-sm font-semibold text-black shadow-[0_0_24px_-6px_rgba(34,211,238,0.9)] transition hover:bg-cyan-300 hover:shadow-[0_0_36px_-4px_rgba(34,211,238,1)]"
           >
             Call Now
           </a>
